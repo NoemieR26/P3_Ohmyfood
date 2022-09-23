@@ -25,7 +25,7 @@ h2 {
 
 h3 {
     font-family: 'Roboto', cursive;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
 }
 
@@ -33,6 +33,12 @@ p {
     font-family: 'Roboto', cursive;
     font-weight: 300;
     font-size: 14px;
+}
+
+a
+{
+    text-decoration:none;
+    color: black;
 }
 
 /* Header */
@@ -51,7 +57,7 @@ p {
 
 .bloc_localisation
 {
-    background-color: rgb(228, 226, 226);
+    background-color: #eaeaea;
 }
 
 .texte_localisation
@@ -61,11 +67,17 @@ p {
     height: 30px;
 }
 
+header i
+{
+    display: inline block;
+    width: 40px;
+}
+
 /* Titre Principal*/
 
 .titre_principal
 {
-    background-color: rgb(243, 241, 241);
+    background-color: #f6f6f6;
 }
 
 .bloc_texte
@@ -87,28 +99,33 @@ p {
 
 .bloc_restaurants
 {
-    background-color: rgb(243, 241, 241);
+    background-color: #f6f6f6;
     padding-left: 5%;
     padding-right: 5%;
 }
 
+.cards_accueil
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
 .card_restaurants
 {
-    height: 100px;
-    width: 200px;
+    height: 200px;
+    
     background-color: white;
-    border-radius: 20px; 
-    border: solid white 5px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    padding-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
     box-shadow: 5px 5px 10px #e2e0e0;
+    margin-bottom: 5%;
 }
 
 .img_restaurants
 {
     width: 100%;
-    height: 50%;
+    height: 70%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     object-position: center;
@@ -116,7 +133,7 @@ p {
 
 .texte_restaurants
 {
-    line-height: 1px;
+    line-height: 5px;
     padding-left: 10px;
 }
 .coeur
@@ -132,21 +149,37 @@ p {
 
 footer
 {
-    padding-top: 5%;
-    padding-left: 5%;
-    background-color: gray;
+    padding: 8%;
+    padding-bottom: 10%;;
+    background-color: #353535;
+    color: white;
 }
 
-.footer img
+footer a
 {
-    width: 50px
+    color: white;
+    font-size: 10px;
+    font-family: 'Roboto', cursive;
+    font-weight: 400;
+}
+
+footer h1
+{
+    font-size: 12px;
+}
+
+footer i
+{
+    display: inline block;
+    width: 18px;
 }
 
 .menu_footer
 {
-    line-height: 12px;
+    line-height: 18px;
     color: white;
     display: flex;
 
     flex-direction: column;
 }
+
