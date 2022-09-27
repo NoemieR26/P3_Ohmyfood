@@ -62,10 +62,16 @@ a
 
 .texte_localisation
 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
     height: 30px;
+    margin-left: 25%;
 }
+
 
 header i
 {
@@ -78,6 +84,8 @@ header i
 .titre_principal
 {
     background-color: #f6f6f6;
+    text-align:center;
+    padding-bottom: 60px;
 }
 
 .bloc_texte
@@ -88,11 +96,92 @@ header i
     flex-direction: column;
 }
 
+.bouton_violet
+{
+    width:200px;
+    line-height:25px;
+    border-radius: 30px 30px 30px 30px;
+    background: #9356DC;
+    color:white;
+    text-decoration:none;
+    border: none;
+    margin-top: 20px;
+}
+
+.bouton_violet :hover 
+{
+        color: black;
+}
+
 /* Fonctionnement*/
 
 .bloc_fonctionnement
 {
-    padding-left: 5%;
+    padding-left: 7%;
+    padding-right: 3%;
+    padding-top: 5%;
+}
+
+.cards_fonctionnement
+{
+    width:100%;
+    line-height:60px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #f6f6f6;
+    box-shadow: 5px 5px 10px #e2e0e0;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+.cards_fonctionnement :hover
+{
+    background-color: rgb(235, 226, 244);
+    border-radius: 15px 15px 15px 15px;
+}
+
+.cards_fonctionnement i
+{
+    display: inline block;
+    width: 50px;
+    color: gray;
+}
+
+/*.cards_fonctionnement:hover > .cards_fonctionnement i 
+{
+    color:#9356DC;
+}
+.cards_fonctionnement i :hover
+{
+    color: #9356DC;
+} */
+
+.cards_fonctionnement a
+{
+    font-family: 'Roboto', cursive;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ligne_fonctionnement
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bulle_chiffre
+{
+    width: 20px;
+    line-height: 20px;
+    border-radius: 20px;
+    background-color: #9356DC;
+    color:white;
+    font-family: 'Roboto', cursive;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
 }
 
 /* Restaurants*/
@@ -102,6 +191,8 @@ header i
     background-color: #f6f6f6;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 .cards_accueil
@@ -109,7 +200,6 @@ header i
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 30px;
 }
 
 .card_restaurants
@@ -136,13 +226,36 @@ header i
     line-height: 5px;
     padding-left: 10px;
 }
+
+.ligne_cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
 .coeur
 {
     margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    margin-right: 8%;
+    margin-top: 2%;
 }
 
-.coeur:hover > .coeur {
+.coeur_plein
+{
+    display: none;
     color: #9356DC;
+    margin-bottom: 5%;
+    align-items: center;
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+.coeur:hover > .coeur_plein 
+{
+    display: flex;
 }
 
 /* Footer*/
