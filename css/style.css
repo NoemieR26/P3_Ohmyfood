@@ -14,7 +14,9 @@
 }
 
 h1 {
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Roboto', cursive;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 h2 {
@@ -45,8 +47,10 @@ a
 
 .logo
 {
-    margin-top: 5%;
-    margin-bottom: 3%;
+    height: 60px;
+    padding-top: 2%;
+    z-index: 1;
+    box-shadow: 0px 5px 5px 0px #E5DEE2;
 }
 
 .logo img
@@ -58,18 +62,18 @@ a
 .bloc_localisation
 {
     background-color: #eaeaea;
+    z-index: 0;
 }
 
 .texte_localisation
 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    height: 30px;
-    margin-left: 25%;
+    line-height: 30px;
 }
 
 
@@ -99,16 +103,19 @@ header i
 .bouton_violet
 {
     width:200px;
-    line-height:25px;
+    line-height:50px;
+    font-family: 'Roboto', cursive;
+    font-size: 14px;
     border-radius: 30px 30px 30px 30px;
-    background: #9356DC;
+    background: linear-gradient(#FF79DA, #9356DC);
     color:white;
     text-decoration:none;
     border: none;
     margin-top: 20px;
+    box-shadow: 2px 5px 3px #e2e0e0;
 }
 
-.bouton_violet :hover 
+.bouton_violet:over 
 {
         color: black;
 }
@@ -133,7 +140,7 @@ header i
     flex-direction: row;
 }
 
-.cards_fonctionnement :hover
+.cards_fonctionnement:hover
 {
     background-color: rgb(235, 226, 244);
     border-radius: 15px 15px 15px 15px;
@@ -144,16 +151,18 @@ header i
     display: inline block;
     width: 50px;
     color: gray;
+    margin-left: 3%;
 }
 
-/*.cards_fonctionnement:hover > .cards_fonctionnement i 
+.cards_fonctionnement:hover > .cards_fonctionnement i
 {
     color:#9356DC;
 }
-.cards_fonctionnement i :hover
+
+.cards_fonctionnement i:hover
 {
     color: #9356DC;
-} */
+} 
 
 .cards_fonctionnement a
 {
@@ -181,7 +190,8 @@ header i
     font-size: 12px;
     display: flex;
     justify-content: center;
-    margin-left: -10px;
+    position: absolute;
+    left: 15px;
 }
 
 /* Restaurants*/
@@ -236,26 +246,30 @@ header i
 }
 .coeur
 {
-    margin-bottom: 5%;
     display: flex;
-    align-items: center;
-    margin-right: 8%;
-    margin-top: 2%;
+    position: absolute;
+    right: 10%;
+    margin-top: 5%;
 }
 
 .coeur_plein
 {
     display: none;
     color: #9356DC;
-    margin-bottom: 5%;
-    align-items: center;
-    margin-right: 8%;
-    margin-top: 2%;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 .coeur:hover > .coeur_plein 
 {
     display: flex;
+}
+
+.coeur:hover > .coeur_vide 
+{
+    display: none;
 }
 
 /* Footer*/
@@ -278,6 +292,7 @@ footer a
 
 footer h1
 {
+    font-family: 'Shrikhand', cursive;
     font-size: 12px;
 }
 
