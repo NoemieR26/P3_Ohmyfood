@@ -115,7 +115,7 @@ header i
     box-shadow: 2px 5px 3px #e2e0e0;
 }
 
-.bouton_violet:over 
+.bouton_violet:hover 
 {
         color: black;
 }
@@ -191,7 +191,7 @@ header i
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 15px;
+    left: 5%;
 }
 
 /* Restaurants*/
@@ -244,9 +244,9 @@ header i
     justify-content: space-between;
 
 }
-.coeur
+
+.coeur i
 {
-    display: flex;
     position: absolute;
     right: 10%;
     margin-top: 5%;
@@ -254,23 +254,18 @@ header i
 
 .coeur_plein
 {
-    display: none;
-    color: #9356DC;
+    color: transparent;
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
     background-clip:text;
     -webkit-background-clip:text;
-    color:transparent;
+    opacity: 0;
 }
 
 .coeur:hover > .coeur_plein 
 {
-    display: flex;
+    opacity: 1;
 }
 
-.coeur:hover > .coeur_vide 
-{
-    display: none;
-}
 
 /* Footer*/
 
@@ -290,7 +285,7 @@ footer a
     font-weight: 400;
 }
 
-footer h1
+footer p
 {
     font-family: 'Shrikhand', cursive;
     font-size: 12px;
@@ -307,7 +302,6 @@ footer i
     line-height: 18px;
     color: white;
     display: flex;
-
     flex-direction: column;
 }
 
