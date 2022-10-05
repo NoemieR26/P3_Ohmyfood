@@ -29,12 +29,14 @@ h3 {
     font-family: 'Roboto', cursive;
     font-weight: 600;
     font-size: 14px;
+    margin: 0;
 }
 
 p {
     font-family: 'Roboto', cursive;
     font-weight: 300;
     font-size: 12px;
+    margin: 0;
 }
 
 a
@@ -151,8 +153,8 @@ section
 .card_plat
 {
     width:90%;
-    height: 60px;
-    line-height:8px;
+    height: 50px;
+    line-height: 20px;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     box-shadow: 5px 5px 10px #e2e0e0;
@@ -160,8 +162,16 @@ section
     flex-direction: row;
     text-align: left;
     padding-left: 10px;
-    padding-top: 1px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
 
+}
+
+.texte_plat
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .prix
@@ -170,7 +180,39 @@ section
     font-size: 12px;
     position: absolute;
     right: 10%;
-    margin-top: -20px;
+    margin-top: 5%;
+}
+
+.animation_plat
+{
+    
+}
+
+.card_plat:hover .icone_animee
+{
+    animation: slide-left 1.3s cubic-bezier(0.5, 0.46, 0.45, 0.94) both;
+    background-color: #99e2d0;
+    height: 50px;
+    width: 15%;
+    border-radius: 0 10px 10px 0;
+}
+
+.icone_animee
+{
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.icone_animee i
+{
+    font-size: 20px;
+    color: white;
+    rotate: 0deg;
 }
 
 .bouton_violet
