@@ -105,6 +105,12 @@ section
     padding-top: 20px;
 }
 
+.fa-lg
+{
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .coeur i
 {
     position: absolute;
@@ -125,11 +131,6 @@ section
 .coeur:hover > .coeur_plein 
 {
     opacity: 1;
-}
-
-.fa-lg
-{
-    line-height: 20px;
 }
 
 .bloc_plats
@@ -167,44 +168,53 @@ section
     display: flex;
     flex-direction: row;
     position: relative;
-
+    transition: all 1s linear 0s;
 }
 
 .texte_plat
 {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: width 300ms 100ms linear
 }
 
 .prix
 {
     font-family: 'Roboto', cursive;
     font-size: 12px;
-    position: absolute;
-    right: 7%;
-    margin-top: 5%;
+    align-self: flex-end;
+    padding-bottom: 10px;
+    transition: all 0.3s linear 0s;
 }
 
-
-.card_plat:hover .icone_animee
+.animation_plat
 {
-    animation: slide-left 1.3s cubic-bezier(0.5, 0.46, 0.45, 0.94) both;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    height: 60px;
-    width: 50px;
-    border-radius: 0 10px 10px 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+}
+
+@keyframes slide {
+0% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+}
+
+100%{
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+}
+
 }
 
 .icone_animee
 {
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 60px;
     background-color: white;
     display: flex;
     border-radius: 100px;
@@ -217,9 +227,31 @@ section
     rotate: 0deg;
 }
 
+.card_plat:hover .icone_animee i
+{
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+}
+
+.card_plat:hover .icone_animee
+{
+    animation: slide 0.3s ease-in-out 0s 1 normal both;
+    background-color: #99e2d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65px;
+    width: 60px;
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+}
+
 .bouton_violet
 {
-    width:50%;
+    width: 10rem;
     line-height:40px;
     font-family: 'Roboto', cursive;
     font-size: 14px;

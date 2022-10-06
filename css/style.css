@@ -263,6 +263,12 @@ header i
 
 }
 
+.fa-lg
+{
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .coeur i
 {
     position: absolute;
@@ -283,11 +289,6 @@ header i
 .coeur:hover > .coeur_plein 
 {
     opacity: 1;
-}
-
-.fa-lg
-{
-    line-height: 20px;
 }
 
 /* Footer*/
