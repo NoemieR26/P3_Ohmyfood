@@ -49,6 +49,7 @@ body
 {
     height: auto;
 }
+
 section
 {
     width: 100%;
@@ -93,8 +94,8 @@ section
     flex-direction: column;
     background-color: #f6f6f6;
     border-radius: 30px 30px 0px 0px;
-    position: absolute;
-    top: 280px;
+    position: relative;
+    bottom: 50px;
     z-index: 1;
 }
 
@@ -104,32 +105,32 @@ section
     padding-top: 20px;
 }
 
-.coeur
+.coeur i
 {
-    display: flex;
     position: absolute;
     right: 10%;
-    top: 40px;
+    top: 3%;
 }
 
-/*.coeur_plein
+.coeur_plein
 {
-    display: none;
-    background: linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-size: 100%;
+    background-clip:text;
+    -webkit-background-clip:text;
+    opacity: 0;
 }
 
 .coeur:hover > .coeur_plein 
 {
-    display: flex;
+    opacity: 1;
 }
 
-.coeur:hover > .coeur_vide 
+.fa-lg
 {
-    display: none;
-}*/
+    line-height: 20px;
+}
 
 .bloc_plats
 {
@@ -165,6 +166,7 @@ section
     padding-top: 15px;
     display: flex;
     flex-direction: row;
+    position: relative;
 
 }
 
@@ -179,32 +181,32 @@ section
     font-family: 'Roboto', cursive;
     font-size: 12px;
     position: absolute;
-    right: 10%;
+    right: 7%;
     margin-top: 5%;
 }
 
-.animation_plat
-{
-    
-}
 
 .card_plat:hover .icone_animee
 {
     animation: slide-left 1.3s cubic-bezier(0.5, 0.46, 0.45, 0.94) both;
     background-color: #99e2d0;
-    height: 50px;
-    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    width: 50px;
     border-radius: 0 10px 10px 0;
 }
 
 .icone_animee
 {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 50px;
+    width: 50px;
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 100px;
 }
 
@@ -246,8 +248,7 @@ footer
     background-color: #353535;
     color: white;
     position: relative;
-    z-index: 2;
-    top: 1030px;
+    bottom: 50px;
 }
 
 footer a
