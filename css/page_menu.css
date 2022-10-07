@@ -17,6 +17,7 @@ h1 {
     font-family: 'Shrikhand', cursive;
     font-weight: 700;
     font-size: 20px;
+    text-align: left;
 }
 
 h2 {
@@ -77,7 +78,7 @@ section
 
 .logo img
 {
-    width: 50%;
+    height: 50%;
 }
 
 .img_top img
@@ -97,6 +98,8 @@ section
     position: relative;
     bottom: 50px;
     z-index: 1;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .titre_menu
@@ -137,6 +140,9 @@ section
 {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .titre_plat
@@ -154,21 +160,51 @@ section
 
 .card_plat
 {
-    width:90%;
-    height: 50px;
-    line-height: 20px;
+    height: 30px;
+    line-height: 14px;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     box-shadow: 5px 5px 10px #e2e0e0;
     margin-bottom: 20px;
-    flex-direction: row;
     text-align: left;
-    padding-left: 10px;
-    padding-top: 15px;
+    padding: 15px 20px 15px 10px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     position: relative;
     transition: all 1s linear 0s;
+    animation: apparition 6s both;
+}
+
+.bloc_plats :nth-child(1)
+{
+    animation-delay: 100ms;
+}
+
+.bloc_plats :nth-child(2)
+{
+    animation-delay: 200ms;
+}
+
+.bloc_plats :nth-child(3)
+{
+    animation-delay: 300ms;
+}
+
+.bloc_plats :nth-child(4)
+{
+    animation-delay: 400ms;
+}
+
+@keyframes apparition
+{
+    0% {
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
 
 }
 
@@ -176,18 +212,19 @@ section
 {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    transform: scaleX(1);
-    transform-origin: left;
-    transition: width 300ms 100ms linear
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .prix
 {
     font-family: 'Roboto', cursive;
     font-size: 12px;
+    font-weight: bold;
+    display: flex;
     align-self: flex-end;
-    padding-bottom: 10px;
+    position: relative;
     transition: all 0.3s linear 0s;
 }
 
@@ -197,6 +234,31 @@ section
     right: 0px;
     bottom: 0px;
     
+}
+
+.card_plat:hover .prix
+{
+    margin-left: 10px;
+    width: 80px;
+}
+
+.card_plat:hover .texte_plat
+{
+    width: 60%;
+}
+
+.card_plat:hover .texte_plat p
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card_plat:hover .texte_plat h3
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @keyframes slide {
@@ -212,46 +274,6 @@ section
 
 }
 
-
-.card_plat:hover .icone_animee
-{
-    animation: slide-left 1.3s cubic-bezier(0.5, 0.46, 0.45, 0.94) both;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    height: 60px;
-    width: 50px;
-    border-radius: 0 10px 10px 0;
-}
-
-.icone_animee
-{
-    height: 65px;
-    width: 60px;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    display: flex;
-    border-radius: 100px;
-}
-
-.icone_animee i
-{
-    font-size: 20px;
-    color: white;
-    rotate: 0deg;
-}
-
-.card_plat:hover .icone_animee i
-{
-    transform: rotate(360deg);
-    transition: transform 0.5s;
-}
-
 .card_plat:hover .icone_animee
 {
     animation: slide 0.3s ease-in-out 0s 1 normal both;
@@ -262,10 +284,21 @@ section
     align-content: center;
     align-items: center;
     text-align: center;
-    height: 65px;
+    height: 60px;
     width: 60px;
     border-radius: 0 15px 15px 0;
-    overflow: hidden;
+}
+
+.icone_animee i
+{
+    font-size: 20px;
+    color: white;
+}
+
+.card_plat:hover .icone_animee i
+{
+    transform: rotate(360deg);
+    transition: transform 0.5s;
 }
 
 .bouton_violet
@@ -280,8 +313,9 @@ section
     text-decoration:none;
     border: none;
     box-shadow: 2px 5px 3px #e2e0e0;
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
 }
 
 .bouton_violet:hover 
