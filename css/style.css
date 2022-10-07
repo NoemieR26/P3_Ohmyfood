@@ -291,6 +291,12 @@ header i
     opacity: 1;
 }
 
+.fa-lg
+{
+    line-height: 20px;
+    font-size: 16px;
+}
+
 /* Footer*/
 
 footer
