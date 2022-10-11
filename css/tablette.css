@@ -1,0 +1,66 @@
+@media only screen and (min-width:768px)
+{
+    .logo
+    {
+        height: 40px;
+    }
+
+    .texte_localisation
+    {
+        line-height: 20px;
+    }
+
+    .bloc_texte
+    {
+        padding-top: 0.5rem;
+    }
+
+    .titre_principal
+    {
+        padding-bottom: 2rem;
+    }
+
+    .bouton_violet
+    {
+        margin-top: 10px;
+    }
+
+    .bloc_fonctionnement
+    {
+        padding-left: 5%;
+    }
+
+    .cards_fonctionnement
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .card_fonctionnement
+    {
+        padding: 1rem;
+        align-items: center;
+        line-height: 30px;
+    }
+
+    .cards_accueil
+    {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        column-gap: 2rem;
+        display: grid;
+        row-gap: 2rem;
+    }
+    
+    footer
+    {
+        padding: 3%;
+        background-color: #353535;
+        color: white;
+    }
+}
+
