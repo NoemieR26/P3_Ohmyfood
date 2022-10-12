@@ -1,9 +1,27 @@
 @media only screen and (min-width: 768px)
 {
+    .titre_menu
+    {
+        padding-top: 3rem;
+    }
+
     .menu{
         display: grid;
-        gap: 4rem;
         grid-template-columns: minmax(0, 1fr);
+    }
+
+    .titre_plat
+    {
+        padding-top: 2%;
+    }
+
+    .coeur i
+    {
+        top: 4rem;
+    }
+
+    .card_plat{
+        position: relative;
     }
 
     footer

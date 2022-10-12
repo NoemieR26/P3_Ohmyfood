@@ -4,7 +4,18 @@
 
 /*loader*/
 
-.loader {
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeout 0.5s linear;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    width: 99vw;
+    height: 100vh;
+  }
+
+.loader_animation {
     border: 10px solid #f3f3f3;
     border-radius: 50%;
     border-top: 10px solid #9356DC;
@@ -13,17 +24,6 @@
     animation: rotate 1s linear infinite;
     position: absolute;
     }
-  
-  .loaderout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeout 0.2s linear;
-    animation-delay: 2.5s;
-    animation-fill-mode: both;
-    width: 99vw;
-    height: 100vh;
-  }
 
   @keyframes rotate {
     0% {
@@ -92,6 +92,12 @@ a{
     color: black;
 }
 
+.main_body{
+  animation: fadein 2s linear;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
 /* Header */
 
 .logo {
@@ -146,7 +152,7 @@ header i
 
 .bouton_violet
 {
-    width:200px;
+    width: 15rem;
     line-height:50px;
     font-family: 'Roboto', cursive;
     font-size: 14px;
@@ -323,17 +329,12 @@ header i
 
 }
 
-.fa-lg
-{
-    font-size: 16px;
-    line-height: 20px;
-}
-
 .coeur i
 {
     position: absolute;
     right: 5%;
     margin-top: 12px;
+    font-size: 1.2rem;
 }
 
 .coeur_plein
@@ -349,12 +350,6 @@ header i
 .coeur:hover > .coeur_plein 
 {
     opacity: 1;
-}
-
-.fa-lg
-{
-    line-height: 20px;
-    font-size: 16px;
 }
 
 /* Footer*/
@@ -379,6 +374,7 @@ footer p
 {
     font-family: 'Shrikhand', cursive;
     font-size: 1rem;
+    padding: 0.2rem;
 }
 
 footer i
