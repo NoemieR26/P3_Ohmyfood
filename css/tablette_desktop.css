@@ -1,10 +1,10 @@
-@media only screen and (min-width: 992px)
+@media only screen and (min-width:768px)
 {
     .logo
     {
         height: 40px;
     }
-    
+
     .texte_localisation
     {
         line-height: 20px;
@@ -19,7 +19,7 @@
     {
         padding-bottom: 2rem;
     }
-    
+
     .bouton_violet
     {
         margin-top: 10px;
@@ -35,13 +35,15 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        align-items: center;
     }
+
 
     .card_fonctionnement
     {
-        align-items: center;
         padding: 1rem;
-        line-height:30px;
+        align-items: center;
+        line-height: 30px;
     }
 
     .cards_accueil
@@ -51,11 +53,10 @@
         display: grid;
         row-gap: 2rem;
     }
-
+    
     footer
     {
         padding: 3%;
-        background-color: #353535;
-        color: white;
     }
 }
+
