@@ -71,7 +71,6 @@ section {
     position: absolute;
 }
 
-
 .logo img {
     height: 50%;
 }
@@ -149,7 +148,7 @@ section {
 
 .card_plat {
     height: 30px;
-    line-height: 14px;
+    line-height: 15px;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     box-shadow: 5px 5px 10px #e2e0e0;
@@ -204,8 +203,6 @@ section {
     font-weight: bold;
     display: flex;
     align-self: flex-end;
-    position: relative;
-    transition: all 0.3s linear 0s;
 }
 
 .animation_plat {
@@ -235,18 +232,6 @@ section {
     text-overflow: ellipsis;
 }
 
-@keyframes slide {
-0% {
-    transform: scaleX(0);
-    transform-origin: 100% 100%;
-}
-
-100%{
-    transform: scaleX(1);
-    transform-origin: 100% 100%;
-}
-}
-
 .card_plat:hover .icone_animee {
     animation: slide 0.3s ease-in-out 0s 1 normal both;
     background-color: #99e2d0;
@@ -259,6 +244,18 @@ section {
     height: 60px;
     width: 60px;
     border-radius: 0 15px 15px 0;
+}
+
+@keyframes slide {
+0% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+}
+
+100%{
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+}
 }
 
 .icone_animee i {

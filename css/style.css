@@ -35,20 +35,20 @@
   }
 
   @keyframes disparition {
-    from {
+    0% {
       opacity: 1;
     }
-    to {
+    100% {
       opacity: 0;
       position: absolute;
     }
   }
 
-  @keyframes appartition {
-    from {
+  @keyframes apparition {
+    0% {
       opacity: 0;
     }
-    to {
+    100% {
       opacity: 1;
     }
   }
@@ -93,7 +93,7 @@ a {
 }
 
 .main_body {
-  animation: appartition 2s linear;
+  animation: apparition 2s linear;
   animation-delay: 2s;
   animation-fill-mode: both;
 }
