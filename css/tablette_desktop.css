@@ -38,7 +38,6 @@
         align-items: center;
     }
 
-
     .card_fonctionnement
     {
         padding: 1rem;
@@ -54,6 +53,14 @@
         row-gap: 2rem;
     }
     
+    .img_restaurants {
+        object-position: center;
+    }
+
+    .img_restaurants_2 {
+        object-position: center;
+    }
+
     footer
     {
         padding: 3%;
