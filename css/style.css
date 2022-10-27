@@ -329,6 +329,7 @@ header i {
 
 .coeur:hover > .coeur_plein {
     opacity: 1;
+    transition: 1s ease-out;
 }
 
 /* Footer*/
